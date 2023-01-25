@@ -3,7 +3,7 @@ const hoursElement = document.querySelector(".hours");
 const minutesElement = document.querySelector(".minutes");
 const secondsElement = document.querySelector(".seconds");
 
-const date = new Date("Jan 1, 2023 00:00:00").getTime();
+const date = new Date("Jan 1, 2024 00:00:00").getTime();
 
 function calculateDate() {
   let date2 = new Date().getTime();
@@ -23,7 +23,7 @@ function calculateDate() {
   secondsElement.innerText = sec;
 
   setTimeout(() => {
-    time();
+    calculateDate();
   }, 1000);
 }
 
